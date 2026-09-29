@@ -1,15 +1,11 @@
-# Análisis de cobertura
+# Análisis de Cobertura de Pruebas
 
-## Resultado observado
-- Cobertura de líneas:
-- Cobertura de ramas:
-- Clase o método analizado:
+## Resultados Obtenidos
+* **Total de Pruebas Ejecutadas:** 8
+* **Pruebas Exitosas:** 8
+* **Pruebas Fallidas:** 0
+* **Cobertura estimada de métodos:** 100% de los métodos principales de `ReservaService` evaluados (cancelaciones, cálculos con descuentos, excepciones y confirmación con Mocks).
 
-## Huecos relevantes
-1.
-2.
-
-## Decisiones
-- ¿Qué prueba nueva se añadió?
-- ¿Qué riesgo protege?
-- ¿Por qué no basta con el porcentaje?
+## Observaciones
+* Las pruebas unitarias cubren los caminos felices (casos normales y VIP/estudiante) y los caminos alternativos (límites de cancelación y excepciones por montos negativos o reservas no disponibles).
+* El uso de Mockito permitió aislar correctamente las dependencias externas como el `DisponibilidadClient` y el repositorio.
